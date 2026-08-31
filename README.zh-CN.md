@@ -4,6 +4,26 @@
 
 本仓库集中管理面向 **M5Stack PaperColor（C151）** 全彩墨水屏设备开发的应用、共用代码和硬件资料。
 
+![M5Stack PaperColor 设备概览](docs/images/m5stack-papercolor-overview.png)
+
+## 关于 M5Stack PaperColor
+
+PaperColor（SKU：C151）是一款基于乐鑫 **ESP32-S3R8** 的便携式全彩墨水屏开发设备。它配备 4 英寸 400×600 Spectra 6 屏幕，适合低功耗信息展示；板载传感器、RTC、microSD 卡槽、音频硬件和扩展接口，也使它适合嵌入式应用开发。
+
+| 硬件 | 规格 |
+| --- | --- |
+| 主控 | ESP32-S3R8，Xtensa LX7 双核，最高 240 MHz |
+| 存储 | 16 MB Flash、8 MB Octal PSRAM |
+| 屏幕 | 4 英寸 ED2208 E Ink Spectra 6 全彩墨水屏，400×600 |
+| 连接 | 2.4 GHz Wi-Fi、USB-C 供电和数据接口 |
+| 扩展存储 | microSD 卡槽 |
+| 板载器件 | SHT40 温湿度传感器、RX8130CE RTC、M5PM1 电源管理 |
+| 交互与扩展 | 3 个用户按键、1 个电源键、红外发射、2 个 RGB LED、HY2.0-4P 扩展接口 |
+| 音频 | ES8311 音频编解码器、MEMS 麦克风、1 W 扬声器 |
+| 电源 | 1250 mAh 电池 |
+
+完整规格、管脚映射、原理图和硬件注意事项请参阅 [M5Stack PaperColor 官方文档](https://docs.m5stack.com/zh_CN/core/PaperColor)。全屏刷新时间会随画面复杂度变化，约为 15–30 秒；因此应用应按需刷新，而不是持续刷新。
+
 当前环境监测应用的界面：
 
 ![M5Stack PaperColor 环境监测界面预览](apps/environment-monitor/ui_preview_v5.png)
