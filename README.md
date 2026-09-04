@@ -33,7 +33,6 @@ Current environment-monitor interface:
 ```text
 m5papercolor-projects/
 ├── apps/                       Independently buildable and flashable applications
-│   ├── device-status-dashboard/ Offline device, storage, power, and health dashboard
 │   └── environment-monitor/    Temperature, humidity, time, and power monitor
 ├── shared/                     Stable code shared by multiple applications
 ├── hardware/                   Pinout, component, and hardware-test notes
@@ -56,7 +55,6 @@ python3 -m pip install -r requirements.txt
 
 | Application | Status | Description |
 | --- | --- | --- |
-| [`device-status-dashboard`](apps/device-status-dashboard/) | MVP builds successfully; flashed for hardware evaluation | Offline device, storage, power, sensor, RTC, and firmware dashboard |
 | [`environment-monitor`](apps/environment-monitor/) | Builds successfully and has been flashed to hardware | Displays temperature, humidity, RTC time, and power status |
 
 ## Common commands

@@ -33,7 +33,6 @@ PaperColor（SKU：C151）是一款基于乐鑫 **ESP32-S3R8** 的便携式全�
 ```text
 m5papercolor-projects/
 ├── apps/                       可独立编译和烧录的应用
-│   ├── device-status-dashboard/ 离线设备、存储、电源和健康状态看板
 │   └── environment-monitor/    温湿度、时间和电源监测
 ├── shared/                     多个应用真正共用的稳定代码
 ├── hardware/                   引脚、器件和硬件测试记录
@@ -56,7 +55,6 @@ python3 -m pip install -r requirements.txt
 
 | 应用 | 状态 | 说明 |
 | --- | --- | --- |
-| [`device-status-dashboard`](apps/device-status-dashboard/) | MVP 已通过编译并烧录，供实机评估 | 离线显示设备、存储、电源、传感器、RTC 和固件状态 |
 | [`environment-monitor`](apps/environment-monitor/) | 已通过编译并烧录到实机 | 显示温湿度、RTC 时间和电源状态 |
 
 ## 常用命令
